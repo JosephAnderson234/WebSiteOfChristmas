@@ -1,0 +1,85 @@
+*{
+    background-image: url(https://acegif.com/wp-content/gifs/starfall-gif-57.gif);
+}
+:root{
+    --main-color: #ffffff;
+    --main-color-dark: #761A1A;
+    --main-color-medium: #dcaa69;
+    --main-color-light: #bb0915;
+    --main-color-light-2: #a7cd7891;
+}
+#mensaje{
+    width: 90%;
+    display: flex;
+}
+.footherPart1{
+    width: 100%;
+}
+.footherPart1 p{
+    margin-top: 15px;
+    font-size: 30px;
+    color: var(--main-color);
+    text-align: center;
+}
+div section p{
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 25px;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 30px;
+    font-family: sans-serif;
+}
+div section img{
+    width: 120%;
+    height: auto;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 60px;
+    font-family: 'Mountains of Christmas', cursive;
+    text-decoration: blink;
+}
+/*Responsive Desing*/
+@media screen and (max-width: 700px){
+    #mensaje{
+        width: 100%;
+        display: block;
+    }
+    .img{
+        justify-content: center;
+        align-items: center;
+    }
+    div section img{
+        display: block;
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+    p{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+/*Effect hover at p and h1*/
+p, h1, img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+p:hover{
+    color: var(--main-color-medium);
+}
+h1:hover{
+    color: var(--main-color-light);
+    text-decoration: underline var(--main-color-dark);
+    text-shadow: 0 0 100px var(--main-color-medium);
+}
+img:hover{
+    background: var(--main-color-light-2);
+    box-shadow: 0 0 45px var(--main-color-light-2);
+}
